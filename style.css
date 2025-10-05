@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300');
 
 :root {
-    --header-image: url('./assets/images/teamaquabanner.png');
-    --color-primary: #4eacbb;
-    --color-primary-dark-1: #318693;
-    --color-primary-light-1: #65c6d5;
-    --color-primary-light-2: #98dae1;
-    --color-primary-light-3: #d0f2ef;
+    --header-image: url('./assets/images/phantsdemakerompatcherbanneragb.png');
+    --color-primary: #8AA8C7;
+    --color-primary-dark-1: #2A3642;
+    --color-primary-light-1: #A7BBD4;
+    --color-primary-light-2: #E4EEF4;
+    --color-primary-light-3: #AAC8DC ;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -21,20 +21,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a { 
-  color: var(--color-primary);
+  color: var(--color-primary-dark-1);
   font-weight: bold;
   text-decoration:none;
 }
 
 a:hover {
-    color: var(--color-primary-dark-1);
+    color: var(--color-primary);
 }
 
 body {
     font-family: "Source Sans 3", sans-serif;
     margin: 0;
-    background: #63ad98;
-    background: linear-gradient(360deg, rgba(99, 173, 152, 1) 0%, rgba(42, 123, 155, 1) 53%, rgba(42, 123, 155, 1) 100%);
+    background: #E4EEF4;
+    background: linear-gradient(360deg, 
+        rgba(228, 238, 244, 1) 0%,
+        rgba(170, 200, 220, 1) 53%,
+        rgba(228, 238, 244, 1) 100% 
+    );
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -65,7 +69,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     row-gap: 20px;
-    background-color: #FFFFFF;
+    background-color: #E4EEF4;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 30px;
@@ -99,7 +103,7 @@ main {
 .hacks_block > .hacks_block_title > h2 {
     color: var(--color-primary-dark-1);
     font-size: 26px;
-    font-family: 'Bang-Tamvan', sans-serif;
+    font-family: 'Jost', sans-serif;
 }
 
 .hacks_block > .hacks_block_title > img {
@@ -119,9 +123,9 @@ main {
 }
 
 .hacks_subblock > .hacks_subblock_title {
-    color: var(--color-primary);
+    color: var(--color-primary-dark-1);
     font-size: 20px;
-    font-family: 'Bang-Tamvan', sans-serif;
+    font-family: 'Jost', sans-serif;
 }
 
 .hacks_subblock > .hack_buttons {
@@ -140,7 +144,7 @@ main {
     justify-content: center;
     align-items: center;
     row-gap: 5px;
-    border: 3px solid var(--color-primary-light-2);
+    border: 3px solid var(--color-primary-light-1);
     border-radius: 20px;
     padding: 20px;
     background-color: white;
@@ -149,7 +153,7 @@ main {
 }
 
 .hacks_subblock > .hack_buttons > .hack_button:hover {
-    border-color: var(--color-primary-light-1);
+    border-color: var(--color-primary-light-2);
 }
 
 .hacks_subblock > .hack_buttons > .hack_button > p {
@@ -188,4 +192,9 @@ main {
     src: url('./assets/fonts/Rounds Neue/TT%20Rounds%20Neue%20Bold%20Italic.ttf');
     font-style: italic;
     font-weight: bold;
+}
+
+@font-face {
+    font-family: Jost;
+    src: url('./assets/fonts/Jost/Jost-Medium.ttf');
 }
